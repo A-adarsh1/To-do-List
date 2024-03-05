@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+body {
+  background-color: #264653;
+}
+.container {
+  background-color: #faedcd;
+  margin-left: 25rem;
+  margin-top: 5rem;
+  width: 40rem;
+  border-radius: 20px;
+  padding-bottom: 5rem;
+}
+.heading {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 2rem;
+}
+.heading h1 {
+  font-family: "Caveat", cursive;
+}
+.heading img {
+height: 3rem;
+border-radius: 50%;
+}
+.add-notes {
+  width: 27rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0 2rem 5.5rem;
+}
+.add-notes input {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.add-notes button {
+  border-radius: 20px;
+  padding: 0.8rem 1.5rem;
+  position: absolute;
+  left: 55.01rem;
+  border: none;
+  background-color: #eb5e28;
+  font-weight: 600;
+}
+.lists {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lists ul li{
+  width: 28rem;
+  background-color: #fff;
+  list-style: none;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 15px;
+  font-size: 18px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+.lists ul li::before {
+  content: '';
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background-image: url(./images/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+.lists ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+.lists ul li.checked::before {
+  background-image: url(./images/checked.png);
+}
+ul li span {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  color: #555;
+  line-height: 20px;
+}
+ul li span:hover {
+  background-color: #dad7cd;
+  border-radius: 50%;
+}
