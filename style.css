@@ -26,8 +26,8 @@ gap: 2rem;
   font-family: "Caveat", cursive;
 }
 .heading img {
-height: 3rem;
-border-radius: 50%;
+  height: 3rem;
+  border-radius: 50%;
 }
 .add-notes {
   width: 27rem;
@@ -53,6 +53,7 @@ border-radius: 50%;
   border: none;
   background-color: #eb5e28;
   font-weight: 600;
+  cursor: pointer;
 }
 .lists {
   display: flex;
@@ -64,7 +65,6 @@ border-radius: 50%;
   background-color: #fff;
   list-style: none;
   margin-bottom: 0.5rem;
-  padding: 0.5rem;
   border-radius: 15px;
   font-size: 18px;
   padding: 12px 8px 12px 50px;
@@ -106,4 +106,44 @@ ul li span {
 ul li span:hover {
   background-color: #dad7cd;
   border-radius: 50%;
+}
+
+/* Respomsiveness */
+@media (min-width: 300px) and (max-width: 450px){
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    margin-top: 18rem;
+    margin-left: 15rem;
+  }
+  .add-notes button {
+    padding: 0.8rem 1.5rem;
+    position: absolute;
+    left: 29.01rem;
+  }
+  .add-notes input {
+    padding: 1rem;
+    font-size: 22px;
+    border-radius: 20px;
+  }
+  .add-notes button {
+    padding: 1.25rem 2rem;
+    border-radius: 20px;
+  }
+  .lists ul li {
+    padding: 14px 8px 14px 52px;
+    font-size: 22px;
+  }
+  ul li span {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 30px;
+    top: 2px;
+    font-weight: 700;
+  }
 }
